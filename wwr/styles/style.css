@@ -88,7 +88,7 @@ nav a:hover{
 }
 
 .book:hover, .join:hover{
-    background-color:beige;
+    background-color:rgb(228, 228, 208);
     color:indigo;
 }
 
