@@ -1,12 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Montserrat:wght@400&display=swap');
+
 .logo{
     width:50px;
     height:50px;
 }
 
-.profile_pic,.interview_pic{
-    width:300px;
-    height:300px;
-}
 
 .grad_pic, .books_pic{
     width:300px;
@@ -16,4 +14,110 @@
 .missionary_pic{
     width:300px;
     height:300px;
+}
+
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    background-color: #4361EE;;
+}
+
+nav a{
+    text-align:center;
+    color:white;
+    font-size:1.5em;
+    padding:25px;
+    font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+nav a:hover{
+    background-color: #4CC9F0;
+    color:black;
+}
+
+a{
+    text-decoration: none;
+}
+
+#maingrid{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 25px;
+}
+
+.title1{
+    font-family:"Changa One";
+    font-size:3em;
+    color: #3F37C9;
+    grid-column:2/3;
+}
+
+.profile_pic{
+    width:325px;
+    height:300px;
+    grid-column:1/2;
+}
+
+
+.intro-paragraph{
+    font-family:"Montserrat", Helvetica, sans-serif;
+    font-size:1.25em;
+    grid-column:2/3;
+}
+
+.last-paragraph{
+    font-family:"Montserrat", Helvetica, sans-serif;
+    font-size:1.25em;
+    grid-column:2/3;
+}
+
+.interview_pic{
+    width:325px;
+    height:300px;
+    grid-column:1/2;
+}
+
+.contact_info{
+    font-size:1.5em;
+    color:#3F37C9;
+}
+
+footer p a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color:whitesmoke;
+    color:black;
+    padding:25px 50px;
+    margin-top:50px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family:"Montserrat", Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        padding: 15px;
+    }
+
+    #maingrid{
+        display:block;
+    }
+
+    .contact_info{
+        font-size:1em;
+        color:#3F37C9;
+    }
+
+    .interview_pic,.profile_pic{
+        width:60%;
+        height:auto;
+    }
+
 }
