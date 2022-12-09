@@ -10,6 +10,36 @@
 <body>
     <header>
         <nav> 
+            <!-- The overlay -->
+        <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="work-experience-and-skills.html">Work Experience and Skills</a>
+        </div>
+  
+        </div>
+  
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <span onclick="openNav()">
+            <div class="ham_logo">
+                <a href="#">&#9776;</a>
+            </div>
+        </span>
+        <script>/* Open when someone clicks on the span element */
+            function openNav() {
+              document.getElementById("myNav").style.width = "100%";
+            } 
+        </script>
+        <script>function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+          }
+        </script>
             <img class="logo" src="images/PO_logo.jpg" alt="Website Logo">
             <a href="index.html" target="_blank">Home</a>
             <a href="education.html" target="_blank">Education</a>
