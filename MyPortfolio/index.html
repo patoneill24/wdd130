@@ -26,11 +26,11 @@
         </div>
   
         <!-- Use any element to open/show the overlay navigation menu -->
-        <span onclick="openNav()">
-            <div class="ham_logo">
-                <a href="#">&#9776;</a>
-            </div>
-        </span>
+        <div class="ham_logo">
+            <span onclick="openNav()">
+                    <a href="#">&#9776;</a>
+            </span>
+        </div>
         <script>/* Open when someone clicks on the span element */
             function openNav() {
               document.getElementById("myNav").style.width = "100%";
@@ -40,7 +40,9 @@
             document.getElementById("myNav").style.width = "0%";
           }
         </script>
-            <img class="logo" src="images/PO_logo.jpg" alt="Website Logo">
+            <div class="logo_button">
+                <a href="index.html"><img class="logo" src="images/PO_logo.jpg" alt="Website Logo"></a>
+            </div>
             <a href="index.html" target="_blank">Home</a>
             <a href="education.html" target="_blank">Education</a>
             <a href="work-experience-and-skills.html" target="_blank">Work Experience and Skills</a>
